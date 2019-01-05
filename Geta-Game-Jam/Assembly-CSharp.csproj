@@ -61,7 +61,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CameraMovement.cs" />
     <Compile Include="Assets\Code\PlayerMovement.cs" />
+    <Compile Include="Assets\Health.cs" />
+    <Compile Include="Assets\IngridientManager.cs" />
+    <Compile Include="Assets\Item.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Nivas/Desktop/Geta-Game-Jam-6/Geta-Game-Jam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
