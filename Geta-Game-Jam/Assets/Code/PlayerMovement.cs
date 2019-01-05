@@ -17,7 +17,9 @@ public class PlayerMovement : MonoBehaviour {
         
         //Animator.setFloat("Vertical", movement.x);
         //Animator.setFloat("Horizontal", movement.y);
-
         transform.position = transform.position + movement * Time.deltaTime * speed;
+
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.Q))
+            Debug.Log("superAwesomeAbility");
 	}
 }
