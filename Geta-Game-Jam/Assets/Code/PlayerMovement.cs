@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     public int speed = 1;
+    public bool canMove = true;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +20,15 @@ public class PlayerMovement : MonoBehaviour {
         //Animator.setFloat("Horizontal", movement.y);
         transform.position = transform.position + movement * Time.deltaTime * speed;
 
-        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.Q))
-            Debug.Log("superAwesomeAbility");
+        
 	}
+    public void Brew() {
+        StartCoroutine(BrewNow());
+    }
+    IEnumerator BrewNow() {
+        canMove = false;
+        //anim.SetTrigger("Brew");
+        yield return new WaitForSeconds(1);
+        canMove = true;
+    }
 }
