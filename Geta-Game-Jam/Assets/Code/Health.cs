@@ -20,6 +20,8 @@ public class Health : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (currentHearts > maxHearts)
+            currentHearts = maxHearts;
         if (currentHearts <= 0) {
             StartCoroutine(Die());
         }
