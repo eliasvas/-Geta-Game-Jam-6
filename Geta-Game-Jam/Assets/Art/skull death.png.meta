@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 548847049152e60488cfb02fc937e065
+guid: 53c053150f992774fac524f8de7d25d2
 TextureImporter:
   fileIDToRecycleName:
-    21300000: flammable f-l-r-b_Animation 4_0
-    21300002: flammable f-l-r-b_Animation 4_1
-    21300004: flammable f-l-r-b_Animation 4_2
-    21300006: flammable f-l-r-b_Animation 4_3
-    21300008: flammable f-l-r-b_Animation 4_4
-    21300010: flammable f-l-r-b_Animation 4_5
+    21300000: skull death_0
+    21300002: skull death_1
+    21300004: skull death_2
+    21300006: skull death_3
+    21300008: skull death_4
+    21300010: skull death_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -80,7 +80,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -91,7 +91,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flammable f-l-r-b_Animation 4_0
+      name: skull death_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 58
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,19 +126,59 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2b28169a32d72741b662602a25b084f
+      spriteID: 533e52959bdbeb5408d463b9e159506d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flammable f-l-r-b_Animation 4_1
+      name: skull death_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf529e77e8405a49b5b255224c8ca75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull death_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae75a1437874ff43933c87110eba3c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull death_3
       rect:
         serializedVersion: 2
         x: 48
         y: 0
-        width: 48
-        height: 58
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,19 +186,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 993ac5f2ce736a0469e339bd5e712368
+      spriteID: 84c83c2526a303a43950275a18ee10a2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flammable f-l-r-b_Animation 4_2
+      name: skull death_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 64
         y: 0
-        width: 48
-        height: 58
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,19 +206,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6d1aa0d94222ae44ad62e5a4ac10cc2
+      spriteID: ecd6c920b88e039428111beb2e90c0df
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flammable f-l-r-b_Animation 4_3
+      name: skull death_5
       rect:
         serializedVersion: 2
-        x: 144
+        x: 80
         y: 0
-        width: 48
-        height: 58
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,47 +226,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7abbad1034622334a80eeae78e495872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flammable f-l-r-b_Animation 4_4
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 48
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13b5ecb7ce0148b4d9030f3642cfd2fb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flammable f-l-r-b_Animation 4_5
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 48
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3bede4a15ffc1c46b0030b31c95db4f
+      spriteID: db19cefd87934f140956319a3645d19d
       vertices: []
       indices: 
       edges: []
@@ -234,7 +234,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d4e5502a257421f4aa6dea0dba7e7f19
+    spriteID: 355fc69785e4f7846883f3aa9624de88
     vertices: []
     indices: 
     edges: []

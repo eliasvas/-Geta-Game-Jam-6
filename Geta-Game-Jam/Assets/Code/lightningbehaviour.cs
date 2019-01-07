@@ -19,7 +19,7 @@ public class lightningbehaviour : MonoBehaviour {
         }
 	}
     IEnumerator Thunder() {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.3f);
         col.enabled = true;
         yield return new WaitForSeconds(1.5f);
         Destroy(gameObject);

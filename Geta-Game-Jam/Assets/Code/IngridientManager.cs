@@ -84,6 +84,33 @@ public class IngridientManager : MonoBehaviour {
             if (playermovement.Direction == Vector3.up)
             {
                 playermovement.Throw();
+                GameObject i = (GameObject)Instantiate(Resources.Load("FlameUp"), trans.position + new Vector3(0, 10, 0), trans.rotation);
+                i.transform.parent = player.transform;
+            }
+            else if (playermovement.Direction == Vector3.up * (-1))
+            {
+                playermovement.Throw();
+                GameObject i = (GameObject)Instantiate(Resources.Load("FlameDown"), trans.position + new Vector3(0,-10, 0), trans.rotation);
+                i.transform.parent = player.transform;
+            }
+            else if (playermovement.Direction == Vector3.right)
+            {
+                playermovement.Throw();
+                GameObject i = (GameObject)Instantiate(Resources.Load("FlameRight"), trans.position + new Vector3(40, 0, 0), trans.rotation);
+                i.transform.parent = player.transform;
+            }
+            else if (playermovement.Direction == Vector3.right * (-1)) {
+                playermovement.Throw();
+                GameObject i = (GameObject)Instantiate(Resources.Load("FlameLeft"), trans.position + new Vector3(-40,0,0), trans.rotation);
+                i.transform.parent = player.transform;
+            }
+            incr(RED, -1);
+        }
+        if (!Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.K) && blues >= 1)
+        {
+            if (playermovement.Direction == Vector3.up)
+            {
+                playermovement.Throw();
                 Instantiate(Resources.Load("LightningUp"), trans.position + new Vector3(-30, 140, 0), trans.rotation);
             }
             else if (playermovement.Direction == Vector3.up * (-1))
@@ -96,15 +123,11 @@ public class IngridientManager : MonoBehaviour {
                 playermovement.Throw();
                 Instantiate(Resources.Load("LightningRight"), trans.position + new Vector3(50, 110, 0), trans.rotation);
             }
-            else if (playermovement.Direction == Vector3.right * (-1)) {
+            else if (playermovement.Direction == Vector3.right * (-1))
+            {
                 playermovement.Throw();
                 Instantiate(Resources.Load("LightningLeft"), trans.position + new Vector3(-50, 110, 0), trans.rotation);
             }
-            incr(RED, -1);
-        }
-        if (!Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.K) && blues >= 1)
-        {
-            //attack1;
             incr(BLUE, -1);
         }
         if (!Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.L) && greens >= 1)
