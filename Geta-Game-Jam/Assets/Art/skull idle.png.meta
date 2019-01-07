@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 548847049152e60488cfb02fc937e065
+guid: e0bd6d8475df1cb4faa1518818536e4c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: flammable f-l-r-b_Animation 4_0
-    21300002: flammable f-l-r-b_Animation 4_1
-    21300004: flammable f-l-r-b_Animation 4_2
-    21300006: flammable f-l-r-b_Animation 4_3
-    21300008: flammable f-l-r-b_Animation 4_4
-    21300010: flammable f-l-r-b_Animation 4_5
+    21300000: skull idle_0
+    21300002: skull idle_1
+    21300004: skull idle_2
+    21300006: skull idle_3
+    21300008: skull idle_4
+    21300010: skull idle_5
+    21300012: skull idle_6
+    21300014: skull idle_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -112,13 +114,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flammable f-l-r-b_Animation 4_0
+      name: skull idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 58
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,19 +128,59 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2b28169a32d72741b662602a25b084f
+      spriteID: 789de95963f85c14ca0234d86bb2017a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flammable f-l-r-b_Animation 4_1
+      name: skull idle_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469fa2c685f1fec4182d4a64a9e005f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull idle_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4644105271992a24e9db471b9fbe5fa3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull idle_3
       rect:
         serializedVersion: 2
         x: 48
         y: 0
-        width: 48
-        height: 58
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,19 +188,59 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 993ac5f2ce736a0469e339bd5e712368
+      spriteID: 877323dfb96ba3347a59baa9973d21de
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flammable f-l-r-b_Animation 4_2
+      name: skull idle_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed65910b330b5f409bcf270fa3aace9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull idle_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd036b5693603c7498fbe93e9d207802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull idle_6
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 48
-        height: 58
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,19 +248,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6d1aa0d94222ae44ad62e5a4ac10cc2
+      spriteID: 9e6d6ab7dd7a4e041b47be655dbb4f67
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flammable f-l-r-b_Animation 4_3
+      name: skull idle_7
       rect:
         serializedVersion: 2
-        x: 144
+        x: 112
         y: 0
-        width: 48
-        height: 58
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,47 +268,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7abbad1034622334a80eeae78e495872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flammable f-l-r-b_Animation 4_4
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 48
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13b5ecb7ce0148b4d9030f3642cfd2fb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flammable f-l-r-b_Animation 4_5
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 48
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3bede4a15ffc1c46b0030b31c95db4f
+      spriteID: f799c503540fba84a93afe02857f6d73
       vertices: []
       indices: 
       edges: []
@@ -234,7 +276,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d4e5502a257421f4aa6dea0dba7e7f19
+    spriteID: 15822b6fcb82a9a4c951a7af34499ea5
     vertices: []
     indices: 
     edges: []
