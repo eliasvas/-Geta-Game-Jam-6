@@ -12,9 +12,11 @@ public class PlayerMovement : MonoBehaviour {
     AnimatorClipInfo[] m_CurrentClipInfo;
     string clipName;
     public Vector3 Direction;
+    Rigidbody2D rb;
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
@@ -24,7 +26,8 @@ public class PlayerMovement : MonoBehaviour {
         {
             anim.SetFloat("Vertical", movement.y);
             anim.SetFloat("Horizontal", movement.x);
-            transform.position = transform.position + movement * Time.deltaTime * speed;
+            //transform.position = transform.position + movement * Time.deltaTime * speed;
+            rb.velocity = movement * Time.deltaTime * speed;
         }
         m_CurrentClipInfo = anim.GetCurrentAnimatorClipInfo(0);
         clipName = (m_CurrentClipInfo[0].clip.name);

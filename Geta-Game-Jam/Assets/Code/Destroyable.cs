@@ -8,9 +8,10 @@ public class Destroyable : MonoBehaviour {
     BoxCollider2D col;
 	// Use this for initialization
 	void Start () {
+        
         col = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {

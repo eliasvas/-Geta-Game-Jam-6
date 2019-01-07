@@ -73,7 +73,12 @@
     <Compile Include="Assets\Code\ScrollScript.cs" />
     <Compile Include="Assets\Code\SkullMovement.cs" />
     <Compile Include="Assets\Code\Treasure.cs" />
+    <Compile Include="Assets\destructable.cs" />
     <Compile Include="Assets\Flame.cs" />
+    <Compile Include="Assets\Sound Design\MusicPlayer.cs" />
+    <Compile Include="Assets\SpawnProjectiles.cs" />
+    <Compile Include="Assets\StartScript.cs" />
+    <Compile Include="Assets\TryAgainBehaviour.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Nivas/Desktop/Geta-Game-Jam-6/Geta-Game-Jam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

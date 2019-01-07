@@ -34,8 +34,13 @@ public class Health : MonoBehaviour {
         }
 	}
     IEnumerator Die() {
+        GameObject player = GameObject.Find("Player");
+        PlayerMovement playermovement = player.GetComponent<PlayerMovement>();
+        Rigidbody2D playerRb = GetComponent<Rigidbody2D>();
+        playerRb.velocity = new Vector3(0, 0, 0);
+        playermovement.canMove = false;
         playerAnimator.SetTrigger("Die");
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(0);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(2);
     }
 }

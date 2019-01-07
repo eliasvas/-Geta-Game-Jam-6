@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ScrollScript : MonoBehaviour {
+    public AudioSource tabSound;
     Animator an;
     bool tab = false;
 	// Use this for initialization
@@ -13,6 +14,7 @@ public class ScrollScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Tab)) {
+            tabSound.Play();
             tab = !tab;
             an.SetBool("Tab", tab);
         }

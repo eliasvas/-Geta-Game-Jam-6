@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class kills : MonoBehaviour {
     GameObject player;
+    bool canHit = true;
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
@@ -16,9 +17,22 @@ public class kills : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Player") {
+        if (collision.name == "Player" && canHit) {
             Health playerHealth = player.GetComponent<Health>();
             playerHealth.currentHearts--;
+            canHit = false;
         }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name == "Player")
+        {
+            StartCoroutine(RestoreCanHit());
+        }
+    }
+    IEnumerator RestoreCanHit()
+    {
+        yield return new WaitForSeconds(1);
+        canHit = true;
     }
 }

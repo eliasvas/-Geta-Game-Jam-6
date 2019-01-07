@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class IngridientManager : MonoBehaviour {
-
+    public AudioSource source;
     GameObject player;
     PlayerMovement playermovement;
     Animator playerAnimator;
     Health hp;
     Transform trans;
+    public AudioSource hpup;
 
     public Text ironText;
     public Text potText;
@@ -35,6 +36,7 @@ public class IngridientManager : MonoBehaviour {
         playermovement = player.GetComponent<PlayerMovement>();
         playerAnimator = player.GetComponent<Animator>();
         hp = player.GetComponent<Health>();
+        hpup = Resources.Load("Getting Life Sound Effect") as AudioSource;
         //StartCoroutine(ShootLeft());
         //StartCoroutine(ShootRight());
         //StartCoroutine(ShootUp());
@@ -81,6 +83,7 @@ public class IngridientManager : MonoBehaviour {
             //DOAWESOMEMOVE3
         }
         if (!Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.J) && reds >= 1) {
+            source.Play();
             if (playermovement.Direction == Vector3.up)
             {
                 playermovement.Throw();
@@ -108,6 +111,7 @@ public class IngridientManager : MonoBehaviour {
         }
         if (!Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.K) && blues >= 1)
         {
+            StartCoroutine(WaitAndBreak());
             if (playermovement.Direction == Vector3.up)
             {
                 playermovement.Throw();
@@ -132,6 +136,7 @@ public class IngridientManager : MonoBehaviour {
         }
         if (!Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.L) && greens >= 1)
         {
+            //hpup.Play();
             playermovement.HealthUp();
             hp.currentHearts++;
             incr(GREEN, -1);
@@ -165,6 +170,10 @@ public class IngridientManager : MonoBehaviour {
             Instantiate(Resources.Load("LightningRight"), trans.position + new Vector3(50, 110, 0), trans.rotation);
             yield return new WaitForSeconds(2);
         }
+    }
+    public IEnumerator WaitAndBreak() {
+        yield return new WaitForSeconds(0.5f);
+        source.Play();
     }
     public IEnumerator ShootLeft()
     {
